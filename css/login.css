@@ -1,0 +1,103 @@
+body{
+    position: relative;
+    margin: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color:  #66a5ad;
+    font-family: Arial, Helvetica, sans-serif;
+}
+section{
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #c4dfe6;
+    border-radius: 10px;
+    padding: 5rem;
+    
+}
+
+section .container input{
+    background-color:  #c4dfe6;
+    font-size: 17px;
+    border: none;
+    width: 190px;
+    margin-left: 10px;
+}
+
+h2{
+    margin-bottom: 2rem;
+}
+.element  {
+    margin: 0.5rem;
+}
+
+.button{
+    margin-top: 1rem;
+    border:none;
+    padding: 0.4rem;
+    color: white;
+    width: 100%;
+    border-radius: 10px;
+    background: #07575b;
+    font-size: large;
+}
+
+.noacc, span{
+    margin: 1rem;
+    color: rgb(113, 119, 124);
+    font-size:small;
+}
+span{
+    cursor: pointer;
+}
+
+
+i{
+    font-size: 1rem;
+}
+
+.signin{
+    font-size: small;
+    color: black;
+
+}
+
+.login{
+    color: white;
+    text-decoration: none;
+}
+label{
+    font-size: large;
+}
+
+button:hover{
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+@media (max-width:520px){
+    section .container{
+        width: 200px;
+    }
+
+    section .container h2{
+        font-size: 22px;
+    }
+
+    section .container input{
+        width: 100px;
+    }
+
+    section .container span{
+        font-size: 12px;
+    }
+}

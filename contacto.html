@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/comun.css">
+    <link rel="stylesheet" href="css/contacto.css">
+    <script src="https://kit.fontawesome.com/9e9253d3c0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <h1>FRONT END PÁGINA WEB</h1>       
+    </nav>
+ 
+
+    <header>
+        <div class="header">
+            <input type="checkbox" id="check">
+            <label for="check">
+                <i style="color: black;" class="fas fa-bars" id="btn"></i>
+                <i style="color: white;" class="fas fa-times" id="cancel"></i>
+            </label>
+            <ul>
+                <a href="index.html"><li>INICIO</li></a>
+                <a href="telescopios.html"><li>TELESCOPIOS</li></a>
+                <a href="prismaticos.html"><li>PRISMATICOS</li></a>
+                <a href="blog.html"><li>NOTICIAS</li></a>
+                <a href="contacto.html"><li>CONTACTO</li></a>
+                <a href="login.html"><li>INICIAR SESION</li></a>
+            </ul>
+        </div>
+    </header>
+
+    <section>
+
+        <div class="container">
+            
+            <div class="contact">
+                <h2>CONTACTAR</h2>
+                <div class="datos">
+                    <label for="">Nombre</label>
+                    <input type="text" class="name input" placeholder="Pablo">
+                </div>
+
+                <div class="datos">
+                    <label for="">Apellidos</label>
+                    <input type="text" class="surname input" placeholder="Chía">
+                </div>
+
+                <div class="datos">
+                    <label for="">Email</label>
+                    <input type="text" class="email input" placeholder="ejemplo@gmail.com">
+                </div>
+
+                <div class="datos">
+                    <label for="">Telefono</label>
+                    <input type="text" class="phone input" placeholder="123456789">
+                </div>
+
+                <div class="datos">
+                    <label for="">Asunto</label>
+                    <select name="" class="select" id="">
+                        <option value="">Sugerencia</option>
+                        <option value="">Consulta</option>
+                        <option value="">Queja</option>
+                    </select>
+                </div>
+
+                <div class="datos">
+                    <label id="sec" for="">¿Estás de acuerdo con que guardemos sus datos?</label>
+                    <div class="rd">
+                        <input type="radio" class="option" name="option">sí
+                        <input type="radio" class="option" name="option">no 
+                    </div>
+                </div>
+                <div class="datos">
+                    <label for="">Mensaje</label>
+                </div>
+                
+                <div class="message"> 
+                    <Textarea class="message"></Textarea>
+                </div>
+                <div class="buttons">
+                    <button>ENVIAR</button>
+                </div>
+            </div>
+
+            <div class="visit">
+                <h2>VISÍTANOS</h2>
+                <div class="imagen"><img src="images/mapa.png" alt=""></div>
+                <div class="info">Avenida de Heliópolis 41012 Sevilla</div>
+                <div>Horario:</div>
+                <div> 10:00/14:00</div>
+                <div> 16:00/18:00</div>
+                <div>Email: ejemplo2@gmail.com</div>
+                <div>Whatsapp:+34 123456789</div>
+            </div>
+
+            
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+    <footer>
+        2023  Pablo Chía Hidalgo
+    </footer>
+
+</body>
+</html>

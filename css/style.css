@@ -1,0 +1,308 @@
+body{
+    position: relative;
+    margin: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/***********************SLIDER**************************/
+.container {
+    margin-top: 150px;
+    width: 100%;
+    display: flex;
+    overflow-x: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider {
+    width: 620px;
+    padding: 10px;
+    display: flex;
+    transition: 0.5s;
+    overflow-x: hidden;
+    border-radius: 10px;
+}
+
+.container .slider .images {
+    display: flex;
+    position: relative;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+.container .slider .images img {
+    width: 620px;
+    margin: 0 10px;
+    border-radius: 20px;
+}
+
+.buttons {
+    position: absolute;
+    display: flex;
+    top: 520px;
+}
+
+.buttons input {
+    margin: 2px;
+    cursor: pointer;
+}
+
+/***********************SLIDER**************************/
+
+/***********************SECTION*************************/
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section .categorias{
+    width: 1100px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+section .categorias .princ{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section .categorias .images{
+    width: 1100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+section .categorias .images .tarjet{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+section .categorias .images .tarjet img{
+    width: 200px;
+}
+section .categorias .images .tarjet .tarj_info{
+    margin-left: 45px;
+    margin-top: 20px;
+}
+
+section .categorias .images .tarjet .tarj_info:hover{
+cursor: pointer;
+padding: 1px;
+}
+
+
+section .categorias .images .tarjet .telescopio{
+    margin-top: 20px;
+}
+section .categorias .images .tarjet .marca{
+    color: rgb(108, 106, 106);
+    margin-bottom: 10px;
+}
+.compra{
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.compra:hover{
+    cursor: pointer;
+    padding: 1px;
+}
+
+section .promo{
+    width: 1060px;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+section .promo div img{
+    width: 500px;
+    border: 1px solid rgb(160, 146, 146);
+}
+section .promo .infor{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section .promo .infor .infor2{
+    margin-top: 20px;
+    width: 350px;
+}
+
+section .promo .infor .name{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:x-large;
+}
+
+section .promo .infor .item{
+    margin-top: 20px;
+}
+
+section li{
+    left: 0;
+    list-style: none;
+}
+
+section .promo .details{
+    font-size: small;
+}
+
+section .promo .details:hover{
+    cursor: pointer;
+    padding: 1px;
+}
+
+section .promo .fa-solid{
+    font-size: x-small;
+}
+
+section .news{
+    width: 1060px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+section .news .blog{
+    display: flex;
+    justify-content: space-around;
+}
+
+section .news .blog img{
+    width: 330px;
+}
+
+.left, .center, .right{
+    display:flex;
+    flex-direction: column;
+}
+.left:hover, .center:hover, .right:hover{
+    cursor: pointer;
+    padding: 1px;
+}
+
+section .news .blog .title{
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/***********************SECTION*************************/
+
+@media (max-width:1120px){
+    section .categorias{
+        width: 620px;
+    }
+
+    section .categorias .images{
+        width: 620px;
+        flex-wrap: wrap;
+    }
+
+    section .categorias .images .tarjet{
+        display: flex;
+        flex-direction: column;
+        width: 290px;
+        margin-left: 20px;
+        margin-bottom: 50px;
+    }
+
+    section .promo{
+        width: 620px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section .news{
+        width: 620px;
+    }
+
+    section .news .blog img{
+        width: 180px;
+    }
+
+    section .news .blog .title{
+        font-size: large;
+    }
+
+    @media (max-width:650px){
+        .slider{
+            width:20rem;
+        }
+
+        .container .slider .images img {
+            width: 20rem;
+        }
+
+        .buttons {
+            top: 340px;
+        }
+
+        section .categorias{
+            width: 300px;
+        }
+
+        section .categorias .images{
+            width: 300px;
+        }
+
+        section .categorias .images .tarjet{
+            width: 130px;
+        }
+
+        section .categorias .images .tarjet img{
+            width: 140px;
+        }
+
+        section .categorias .images .tarjet .tarj_info{
+            margin-left: 6px;
+            margin-top: 20px;
+        }
+
+        section .promo div img{
+            width: 350px;
+        }
+
+        section .news{
+            width: 300px;
+        }
+
+        section .news .blog{
+            width: 300px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        section .news .blog img{
+            width: 300px;
+        }
+
+        .left, .center, .right{
+            margin: 10px;
+        }
+
+        section .news .blog .title{
+            font-size: large;
+        }        
+
+        .compra{
+            height: 40px;
+            font-size: 14px;
+        }
+
+    }
+}

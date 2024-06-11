@@ -1,0 +1,107 @@
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content:center;
+    background-color: black;
+    color: white;
+    z-index: 1000;
+}
+/***********************NAV****************************/
+
+/***********************HEADER**************************/
+header{
+    position: fixed;
+    margin-top: 45px;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header ul a{
+    text-decoration: none;
+    color: white;
+}
+.header ul{
+    background-color: rgb(14, 13, 13);
+    color: white;
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.header ul li:hover{
+    cursor: pointer;
+    padding: 1px;
+}
+
+ header #check{
+    display: none;
+}
+header #btn{
+    display: none;
+    position: fixed;
+    font-size: 35px;
+    left: 2px;
+}
+header #btn:hover{
+    cursor: pointer;
+}
+
+header #cancel{
+    position: fixed;
+    left: -250px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+/***********************HEADER**************************/
+
+/***********************FOOTER**************************/
+footer{
+    position: absolute;
+    background-color: aqua;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/***********************FOOTER**************************/
+
+@media (max-width:1000px){
+    .header ul{
+        flex-direction: column;
+        width: 250px;
+        margin-left: -350px;
+    }
+
+    header ul li{
+        margin: 7px;
+        width: fit-content;
+    }
+
+    #check:checked ~ ul{
+        margin-left: 0px;
+        transition: .5s;
+    }
+
+    #check:checked ~ label #cancel{
+        margin-left:515px;
+        transition: .5s;
+    }
+        
+    #check:checked ~ label #btn{
+        opacity: 0;
+        pointer-events: none;
+        transition: .5s;
+    }
+
+    header #btn{
+        display: block;
+        transition: .5s;
+    }
+}

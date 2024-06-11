@@ -1,0 +1,184 @@
+body{
+    position: relative;
+    margin: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color:  #66a5ad;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+section .container{
+    margin-top: 160px;
+    background-color: #c4dfe6;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 1100px;
+    border-radius: 10px;
+    padding-bottom: 50px;
+}
+
+section .container .contact, section .container .visit{
+    margin-top:30px;
+}
+
+section .container .contact .datos{
+    margin-top: 10px;
+}
+
+section .container .contact .input{
+    height: 20px;
+    width: 310px;
+}
+
+section .container .name{
+    margin-left: 10px;
+}
+
+section .container .surname{
+    margin-left: 1px;
+}
+
+section .container .email{
+    margin-left: 25px;
+}
+
+section .container .phone{
+    margin-left: 6px;
+}
+
+section .container .select{
+    margin-left: 17px;
+}
+
+section .container .message{
+    margin-top: 5px;
+    width: 380px;
+    height: 60px;
+    margin-bottom: 30px;
+}
+
+section .container .contact .buttons{
+    display: flex;
+    justify-content: right;
+}
+
+section .container .contact .buttons button{
+    width: 150px;
+    background: #07575b;
+    color: white;
+}
+
+section .container .contact .buttons button:hover{
+    cursor: pointer;
+}
+
+section .container .visit img{
+    width: 200px;
+    border: 1px solid black;
+}
+
+section .container .visit img:hover{
+    cursor: pointer;
+}
+
+
+section .container .visit div{
+    margin-top:3px;
+}
+
+@media (max-width:1110px){
+    section .container{
+        width: 800px;
+    }
+
+
+    
+    section .container .contact .input{
+        width: 310px;
+    }
+
+    
+    section .container .message{
+        width: 380px;
+    }
+    
+    
+    section .container .contact .buttons button{
+        width: 150px;
+    }
+    
+    section .container .visit img{
+        width: 200px;
+    }
+
+
+}
+
+@media (max-width:820px){
+    section .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section .container{
+        width: 400px;
+    }
+
+    section .container .contact{
+        width: 280px;
+    }
+
+    section .container .contact h2, section .container .visit h2{
+        display: flex;
+        justify-content: center;
+    }
+    
+    section .container .contact .input{
+        width: 200px;
+    }
+
+    
+    section .container .message{
+        width: 270px;
+    }
+    
+    section .container .contact .buttons{
+        justify-content: center;
+    }
+    
+    section .container .contact .buttons button{
+        width: 150px;
+    }
+
+    section .container .visit .imagen{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    section .container .visit img{
+        width: 200px;
+        margin-bottom: 5px;
+    }
+
+    #sec{
+        font-size: 15px;
+    }
+    .rd{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

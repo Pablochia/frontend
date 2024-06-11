@@ -1,0 +1,234 @@
+body{
+    position: relative;
+    margin: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/********************SECTION********************/
+section{
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+section .section{
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+section .section .telescopio{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+section .section .telescopio .slider{
+    border:0.5px solid rgb(94, 92, 92);
+    overflow-x: hidden;
+}
+section .section .telescopio .slider .imagen{
+    transition: 0.5s;
+    width: 500px;
+    display: flex;
+}
+
+section .section .telescopio .imagen img{
+    margin-right: 5px;
+    width: 496px;
+}
+
+section .section .telescopio .buttons{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+}
+
+section .section .telescopio .buttons button{
+    border:0.5px solid rgb(94, 92, 92);
+    background-color: white;
+}
+section .section .telescopio .buttons button:hover{
+    cursor: pointer;
+    padding: 1px;
+}
+
+section .section .telescopio .buttons img{
+    width: 90px;
+}
+
+section .section .info{
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section .section .info .container{
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+section .section .info .container .small{
+    font-size: small;
+    margin-bottom: 5px;
+}
+
+section .section .info .container .modelo{
+    font-size: xx-large;
+    margin-top: 5px;
+}
+
+section .section .info .container .precio{
+    margin:15px 0px;
+    font-size: large;
+}
+
+section .section .info .container .compra{
+    margin: 10px 0px;
+    padding:5px 65px;
+    width: fit-content;
+    border: 1px solid black;
+}
+
+section .section .info .container .compra:hover{
+    cursor: pointer;
+    padding: 6px 66px;
+}
+
+section .section .info li{
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+table{
+    width: 550px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table tr, table tr td, table tr th{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 15px 4px;
+}
+
+table tr th, table tr td{
+    font-size: 14px;
+}
+table tr td div{
+    padding-top: 4px;
+}
+section .especificaciones{
+    margin-top: 30px;
+    width: 550px;
+    font-size: 18px;
+}
+
+.title_table{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 0px;
+    width:548.5px ;
+    border: 1px solid black;
+    border-bottom: none;
+}
+
+section .info .head{
+    font-size: 20px;
+    margin:30px 0px;
+    font-weight: bold;
+}
+
+
+section .info .item{
+    font-size: 16px;
+}
+
+@media (max-width:1250px){
+    section .section{
+        width: 800px;
+    }
+    
+    section .section .telescopio{
+        width: 300px;
+    }
+    
+    section .section .telescopio .slider .imagen{
+        width: 300px;
+    }
+    
+    section .section .telescopio .imagen img{
+        margin-right: 5px;
+        width: 296px;
+    }
+    
+    section .section .telescopio .buttons{
+        margin-top: 20px;
+        width: 300px;
+    }
+    
+    section .section .telescopio .buttons img{
+        width: 60px;
+    }
+
+    section .section .info{
+        width: 500px;
+    }
+    
+    section .section .info .container{
+        width: 350px;
+    }
+    
+    
+    table{
+        width: 350px;
+    }
+    
+    table tr th, table tr td{
+        font-size: 14px;
+    }
+
+    section .especificaciones{
+        width: 350px;
+        font-size: 18px;
+    }
+    
+    .title_table{
+        width:348.5px ;
+    }
+    
+    section .info .head{
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    section .info .item{
+        font-size: 16px;
+    }
+}
+
+@media (max-width:800px){
+    section .section{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section .section .telescopio{
+        margin-bottom: 40px;
+    }
+}

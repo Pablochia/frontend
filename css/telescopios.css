@@ -1,0 +1,210 @@
+body{
+    position: relative;
+    margin: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/***********************SECTION********************/
+
+section{
+    margin-top: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+section .section .title{
+    width: 750px;
+}
+
+section .section .title .name{
+    font-size: 30px;
+}
+section .section .title .inf{
+    color: rgb(66, 65, 65);
+    margin:5px 0px;
+    font-size: 17px;
+}
+
+section .container{
+    margin-top: 20px;
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+}
+
+section .container .filter{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 200px;
+    height: 100%;
+}
+
+section .container .filter .marca{
+    margin-top: 3px;
+    font-size: medium;
+}
+
+section .container .filter .fa-unlock{
+    font-size: 13px;
+}
+
+.filtrar{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:medium;
+    margin-top: 20px;
+}
+section .container .telescopes{
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section .container .telescopes .tarjet{
+    display: flex;
+    flex-direction: column;
+    width: 230px;
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+section .container .telescopes .tarjet img{
+    width: 200px;
+}
+
+section .container .telescopes .tarjet .telescopio{
+    margin-top: 20px;
+}
+section .container .telescopes .tarjet .marca{
+    color: rgb(108, 106, 106);
+    margin-bottom: 10px;
+}
+
+.compra{
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.compra:hover{
+    cursor: pointer;
+    padding: 1px;
+}
+
+.click{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(to right, #8d68c5, #e34494);
+}
+/***********************SECTION********************/
+
+@media (max-width:1250px){
+
+    section .section{
+        width: 750px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+    section .container{
+        width: 750px;
+    }
+    
+    section .container .filter{
+        width: 200px;
+    }
+
+    section .container .telescopes{
+        width: 550px;
+    }
+    
+    section .container .telescopes .tarjet{
+        width: 150px;
+    }
+    
+    section .container .telescopes .tarjet img{
+        width: 150px;
+    }
+
+    .compra{
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width:750px){
+
+    section .container{
+        flex-direction: column;
+    }
+    
+     .hide{
+        display: none;
+    }
+    
+    .show{
+        display: block;
+    }
+
+    section .container .filter .filtrar i:hover{
+        cursor: pointer;
+    }
+
+    section .container .filter{
+        margin-bottom: 20px;
+    }
+
+    section .container .filter .hide .row{
+        width: 375px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    section .section .title{
+        width: 370px;
+    }
+
+    section .section{
+        width: 3750px;
+    }
+
+    
+    section .container{
+        width: 375px;
+    }
+
+    section .container .telescopes{
+        width: 375px;
+    }
+    
+    section .container .telescopes .tarjet{
+        width: 160px;
+    }
+    
+    section .container .telescopes .tarjet img{
+        width: 160px;
+    }
+
+    .compra{
+        font-size: 15px;
+    }
+
+}
